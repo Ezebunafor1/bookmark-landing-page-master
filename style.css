@@ -1,0 +1,483 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+html{
+    scroll-behavior: smooth;
+    user-select: none;
+}
+.header{
+    z-index: 100;
+    font-size: 20px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding: 0 60px; 
+     background-color: hsl(0, 0%, 97%); 
+     position: sticky; 
+    top: 0;
+    padding: 20px;
+}
+.nav-bar{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+.nav-bar li a:hover{
+    color: red;
+}
+.nav-bar button{
+    border: none;
+    padding: 10px 20px;
+    background-color: hsl(0, 94%, 66%);
+    border-radius: 8px;
+    color: hsl(0, 0%, 97%);
+}
+.nav-bar button:hover{
+    border: 1px solid red;
+    background-color: white;
+    color: red;
+}
+.nav-bar li a{
+    text-decoration: none;
+    color:hsl(229, 31%, 21%) ;
+}
+.hamburger{
+    display: none;
+}
+.hamburger img{
+    display: block;
+    margin: 2px;
+    /* height: px; */
+    
+
+}
+.arrow{
+    position: absolute;
+    left: 70%;
+    z-index:-1;
+    bottom: 20%;
+    width: 30%;
+    height: 300px;
+    background-color:hsl(231, 69%, 60%) ;
+    border-radius: 50% 0 0 50%;
+}
+
+
+
+main{
+     max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    /* background-color: white; */
+     
+}
+.h2{
+    text-align: center;
+    font-size: 40px;
+}
+.p{
+    text-align: center;
+      font-size: 20px;
+    padding: 10px;
+    color: rgb(84, 85, 86);
+}
+
+.hero-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    background-image: url(images/);
+    position: relative;
+}
+.hero h2{
+    color: hsl(229, 31%, 21%) ;
+    font-size: 60px;
+    padding-top: 20px;
+}
+.hero p{color: rgb(84, 85, 86);
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.hero-image img{
+    width: 100%;
+    position: relative;
+}
+.btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 60%;
+    cursor: pointer;
+    
+}
+img{
+    /* width: 100%; */
+}
+.btn1{
+    color: white;
+    background-color: hsl(231, 69%, 60%);
+    border: none;
+    border-radius: 5px;
+    padding: 15px ;
+    font-size: 20px;
+    cursor: pointer;
+   
+    
+
+}
+.btn2{
+    color: rgb(16, 12, 12);
+    background-color: rgb(246, 246, 248);
+    border: none;
+    border-radius: 5px;
+    padding:  15px ;
+    font-size: 20px;
+
+}
+.feature-section{
+    position: relative;
+
+}
+.feature-section h2{
+    font-size: 40px;
+   
+    
+} 
+
+.feature-grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    width: 100%;
+    margin: 20px auto;
+    
+}
+
+.feature-grid li a{
+    text-decoration: none;
+     color: gray;
+     
+     padding: 20px;
+}
+.feature-grid li a:hover {
+    color: black;
+    border-bottom: 3px solid red;
+}
+
+hr{
+    margin-left: 0;
+    border: 1px solid rgb(189, 188, 188);
+    background-color: gray;
+    width: 100%;
+    margin: 20px auto; 
+  
+}
+
+.feature{
+        display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    align-items: center;
+}
+#wat{
+     position: absolute;
+    right: 70%;
+    z-index:-1;
+    top: 1200px;
+    bottom: 0;
+    width: 30%;
+    height: 300px;
+    background-color:hsl(231, 69%, 60%) ;
+    border-radius: 0 50% 50% 0;
+}
+.feature div img{
+    position: relative;
+    width: 100%;
+}
+.feature p{
+    font-size: 18px;
+    padding: 20px 0;
+    line-height: 25px;
+}
+.bookmarks{
+    width: 70%;
+    padding-top: 15%;
+}
+.bookmarks button{
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+@keyframes slid {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-50%);
+    }
+}
+.Download-section h2{
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+} 
+
+.Download-section p{
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 30px;
+    color: rgb(84, 85, 86);
+}
+.grid-container{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+     text-align: center;
+    align-items: center; 
+    /* padding-left: 20%; */
+     gap: 20px;
+      width: 70%;
+      
+      margin: 20px auto;
+}
+.grid-item{
+    animation: slid 6s linear infinite;
+    background-color: white;
+    box-shadow: 0 8px 8px gray;
+    border-radius: 10px;
+   
+}
+
+
+.item2{
+    transform: translateY(30px);
+}
+.item3{
+    transform: translateY(60px);
+}
+.grid-item div img{
+    padding: 5%;
+    width: 60%;
+}
+.grid-item button{
+    border: none;
+    font-size: 10px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    width: 70%;
+    border-radius: 5px;
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+}
+.Frequently-section{
+    padding-top: 5%;
+}
+.Frequently-section h2{
+    font-size: 40px;
+}
+.Frequently-grid{
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+}
+.Frequently-grid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.point{
+    display: none;
+}
+.active.point{
+   display:flex ;
+}
+
+.Frequently-grid hr{
+    border: none;
+    height: 2px;
+    background-color: rgb(242, 236, 236);
+}
+.Frequently-section button{
+     background-color: hsl(231, 69%, 60%);
+    color: white;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 90px; 
+    margin: 20px auto;
+}
+.footer{
+    background-color: hsl(231, 69%, 60%);
+    padding: 50px;
+}
+.footer h3{
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    letter-spacing: 5px;
+}
+.footer p{
+    color: white;
+    font-size: 20px;
+}
+.btn3{
+    border: none;
+    padding:  20px ;
+    background-color: hsl(0, 94%, 66%);
+    border-radius: 8px;
+    color: hsl(0, 0%, 97%);
+}
+.footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer{
+background-color: hsl(229, 31%, 21%);
+color: white;
+padding: 30px;
+}
+footer section{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+}
+.hero-footer{
+    color: antiquewhite; 
+}
+.nav-footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    list-style: none;
+}
+.nav-image{
+    justify-content: space-around;
+    display: flex;
+    gap: 20px;
+}
+.nav-footer li a{
+    text-decoration: none;
+    color: white;
+}
+footer img{
+    width: 20px;
+    
+}
+
+@media (max-width: 768px){
+
+   .grid-container{
+         grid-template-columns: 1fr;
+         width: 100%;
+    }
+
+    .Download-section h2{
+        text-align: center;
+    }
+    footer section{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .feature-grid{
+        flex-direction: column;
+    }
+    .footer div {
+        flex-direction: column;
+    }
+    .footer div button{
+        width: 70%;
+    }
+    .nav-footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    .grid-container{
+        flex-direction: column;
+    }
+    .nav-bar{
+        display: none;
+        right: 0;
+        left: 0;
+        padding:90px 10px 30px;
+        width: 100%;
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        background-color: rgb(77, 77, 191);
+        z-index: 1000;
+        button{
+            width: 100%;
+        }
+    }
+
+    
+    .nav-bar.active{
+        
+       display: flex;
+    
+    }
+    .logo{
+        z-index: 1200;
+        background-color: white;
+    }
+    
+    .hamburger{
+        display: block;
+        z-index: 1200;
+    }
+    main{ object-fit: cover;
+       
+        max-width: 1440px;
+        margin: 25px 0;
+    }
+    img{
+        width: 100%;
+    }
+    .hero-section{
+        grid-template-columns: 1fr;
+    }
+    .feature{
+        grid-template-columns: 1fr;
+        padding-left: 20%;
+
+    }
+    .bookmarks{
+        padding-top: 20px;
+        width: 100%;
+       
+    }
+}
